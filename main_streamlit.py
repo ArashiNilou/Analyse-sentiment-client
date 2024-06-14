@@ -6,7 +6,7 @@ import base64
 
 
 # Charger les données nettoyées
-url = "/Users/mac/myenv/df_finale.csv"
+url = "df_finale.csv"
 df_finale = pd.read_csv(url, sep=",", on_bad_lines="skip")
 df_finale.dropna(inplace=True)
 
