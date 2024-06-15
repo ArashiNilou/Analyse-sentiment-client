@@ -43,6 +43,17 @@ set_background(
     "vue-dessus-du-jeune-homme-affaires-muscle-serieux-mode-portant-chemise-sans-manches-blanche-baskets-pantalon-rouge-tapant-mains-bandages-avant-formation-boxe-apres-journee-travail-au-bureau.jpg"
 )
 
+# Ajouter du CSS pour modifier la couleur du texte
+st.markdown(
+    """
+    <style>
+    .stApp {
+        color: white; /* Texte en blanc */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Interface utilisateur pour la sélection du produit
 produit_recherche = st.text_input("Entrer le nom du produit que vous cherchez : ")
